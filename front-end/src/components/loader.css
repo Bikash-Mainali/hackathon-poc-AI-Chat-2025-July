@@ -1,0 +1,25 @@
+.wavy-dots span {
+  display: inline-block;
+  animation: wave 1.3s infinite;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.wavy-dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+.wavy-dots span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.wavy-dots span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-6px);
+  }
+}
