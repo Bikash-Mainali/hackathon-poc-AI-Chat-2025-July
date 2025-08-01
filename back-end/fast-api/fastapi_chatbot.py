@@ -19,6 +19,7 @@ from response_model import ResponseModel
 env = os.getenv("APP_ENV", "dev")
 config.load_env(env)
 openai_api_key = os.getenv("OPENAI_API_KEY")
+print(f"open api key {openai_api_key}")
 assert openai_api_key, "OPENAI_API_KEY must be set"
 json_path = "website_content.json"
 
